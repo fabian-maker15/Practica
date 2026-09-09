@@ -1,7 +1,3 @@
-/* =========================================================
-   Sitio personal de Favian — paleta "fuego" (amarillo → rojo)
-   ========================================================= */
-
 :root{
   --amarillo:      #FFC53D;
   --naranja:       #FF8A1E;
@@ -41,7 +37,6 @@ a{ color: var(--rojo); }
 
 img{ max-width: 100%; display: block; }
 
-/* ---------- Encabezado del sitio ---------- */
 .site-header{
   background: var(--gradiente-fuego);
   color: var(--carbon);
@@ -79,7 +74,6 @@ img{ max-width: 100%; display: block; }
   max-width: 46ch;
 }
 
-/* ---------- Menú de navegación ---------- */
 nav.menu-principal{
   background: var(--carbon);
   padding: 4px 6vw;
@@ -113,7 +107,6 @@ nav.menu-principal a:focus-visible{
   transform: translateY(-2px);
 }
 
-/* ---------- Iframe contenedor del contenido ---------- */
 .marco-contenido{
   padding: 26px 6vw 8px;
 }
@@ -129,7 +122,6 @@ iframe#contenido{
   background: var(--crema);
 }
 
-/* ---------- Pie de página (usado en todas las páginas) ---------- */
 footer.site-footer{
   background: var(--gradiente-fuego-inv);
   color: var(--carbon);
@@ -144,10 +136,6 @@ footer.site-footer{
   font-weight: 600;
 }
 
-/* =========================================================
-   Estilos para el contenido dentro del iframe
-   (sobre-mi.html, hobbies.html, ciudad.html)
-   ========================================================= */
 
 body.pagina-interna{
   padding: 28px 5vw 0;
@@ -163,7 +151,6 @@ body.pagina-interna{
   font-size: clamp(1.5rem, 4vw, 2.1rem);
 }
 
-/* --- Sobre mí --- */
 .perfil{
   display: flex;
   gap: 28px;
@@ -213,7 +200,6 @@ body.pagina-interna{
   margin-bottom: 24px;
 }
 
-/* --- Hobbies --- */
 .hobby{
   margin-bottom: 34px;
   padding-bottom: 24px;
@@ -259,7 +245,6 @@ body.pagina-interna{
   margin-top: 6px;
 }
 
-/* --- Mi ciudad --- */
 .ciudad-hero{
   border-radius: var(--radio);
   overflow: hidden;
@@ -291,7 +276,6 @@ body.pagina-interna{
   box-shadow: var(--sombra);
 }
 
-/* Imagen de reemplazo (placeholder) para cuando aún no se sube la foto real */
 .placeholder-img{
   display: flex;
   align-items: center;
@@ -304,7 +288,6 @@ body.pagina-interna{
   padding: 10px;
 }
 
-/* ---------- Responsivo ---------- */
 @media (max-width: 640px){
   .site-header{ padding: 24px 5vw; }
   nav.menu-principal ul{ justify-content: center; }
